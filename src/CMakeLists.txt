@@ -41,6 +41,11 @@ ADD_LIBRARY ( pbrt STATIC
 ADD_EXECUTABLE ( pbrt_exe
   main/pbrt.cpp
   )
+SET_TARGET_PROPERTIES ( pbrt_exe
+  PROPERTIES
+  OUTPUT_NAME
+  pbrt
+  )
 
 TARGET_LINK_LIBRARIES ( pbrt_exe
   pbrt
